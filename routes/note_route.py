@@ -11,7 +11,7 @@ n_router = APIRouter()
 
 class PostNote(BaseModel):
     title: str
-    context: Optional[str, None] = None
+    context: Optional[str] = None
 
 class GetNote(PostNote):
     created_at: datetime
